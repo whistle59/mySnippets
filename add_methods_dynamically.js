@@ -1,3 +1,20 @@
+/*
+This example was taken from https://javascript.info/constructor-new
+Thanks to Ilya for that awsome course!!
+
+FUNCTIONALITY:
+Create a constructor function Calculator that creates “extendable” calculator objects.
+
+Step1: implement the method calculate(str) that takes a string like "1 + 2"
+in the format “NUMBER operator NUMBER” (space-delimited) and returns the result.
+ Should understand plus + and minus -.
+
+Step 2: add the method addOperator(name, func) that teaches the calculator
+ a new operation. It takes the operator name and the two-argument function
+ func(a,b) that implements it.
+
+*/
+
 function Calculator() {
   let methods = {
     "+": (a,b) => a + b,
